@@ -17,7 +17,9 @@ pipeline {
     }
     stage('Copy files') {
       steps {
-        bat 'xcopy %WORKSPACE%\\*.* %DESTINATION_FOLDER%\\%BUILD_NUMBER%\\*.* /S /H'
+        bat 'xcopy %WORKSPACE%\\FolderA\\*.* %DESTINATION_FOLDER%\\%BUILD_NUMBER%\\FolderA\\*.* /S /H'
+        bat 'xcopy %WORKSPACE%\\FolderB\\*.* %DESTINATION_FOLDER%\\%BUILD_NUMBER%\\FolderB\\*.* /S /H'
+        bat 'xcopy %WORKSPACE%\\icap-data\\*.* %DESTINATION_FOLDER%\\%BUILD_NUMBER%\\FolderB\\icap-data\\*.* /S /H'
       }
     }
   }

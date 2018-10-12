@@ -1,1 +1,2 @@
 File B content (master)
+File B content (dev)

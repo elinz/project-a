@@ -10,7 +10,7 @@ pipeline {
       steps {
         git(url: 'https://github.com/elinz/project-a', branch: 'dev', credentialsId: 'elinz')
         dir(path: 'icap-data') {
-          git(url: 'https://github.com/elinz/project-b', branch: 'dev', credentialsId: 'elinz')
+          git(url: 'https://github.com/elinz/project-b', branch: 'patch-1.1.1', credentialsId: 'elinz')
         }
 
       }
